@@ -3,6 +3,7 @@
   <head>
     <title>FirstRailsAppBatch813</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +12,11 @@
   </head>
 
   <body>
+    <h1>The Spoon</h1>
+    <%= link_to "<- Go back home", root_path %>
+
     <%= yield %>
+
+    <p>Made with <3 at Le Wagon</p>
   </body>
 </html>
